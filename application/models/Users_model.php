@@ -475,7 +475,8 @@ class Users_model extends CI_Model {
             'is_hr' => $is_hr,
             'manager' => $row->manager,
             'random_hash' => $row->random_hash,
-            'logged_in' => TRUE
+            'logged_in' => TRUE,
+            'organization' => $row->organization
         );
         $this->session->set_userdata($newdata);
     }
